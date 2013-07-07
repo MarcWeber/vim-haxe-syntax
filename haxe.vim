@@ -4,10 +4,7 @@
 " Vim syntax file
 " Language:     haxe
 
-" Please check :help haxe.vim for comments on some of the options available.
-
 "set errorformat=%f\:%l\:\ characters\ %c-%*[^\ ]\ %m,%f\:%l\:\ %m
-set errorformat=%f\:%l\:\ characters\ %c-%*[^\ ]\ %m,%f\:%l\:\ %m
 
 " Quit when a syntax file was already loaded
 if !exists("main_syntax")
@@ -37,7 +34,7 @@ HaxeHiLink haxeError2 haxeError
 
 
 " keyword definitions
-syn keyword haxeExternal	import extern package
+syn keyword haxeExternal	import extern package using
 syn keyword haxeConditional	if else switch
 syn keyword haxeRepeat		while for do in
 syn keyword haxeBoolean		true false
