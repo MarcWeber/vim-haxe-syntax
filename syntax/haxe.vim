@@ -152,9 +152,7 @@ syn match   haxeNumber		 "\<\d\+[eE][-+]\=\d\+[fFdD]\=\>"
 syn match   haxeNumber		 "\<\d\+\([eE][-+]\=\d\+\)\=[fFdD]\>"
 
 
-syn match haxeCondIf "#if\>"
-syn match haxeCondElse "#\%(else\|elseif\)\>"
-syn match haxeCondEnd "#end\>"
+syn match haxeCond "#\%(if\|else\|elseif\|end\|error\)\>"
 
 " unicode characters
 syn match   haxeSpecial "\\u\d\{4\}"
@@ -248,10 +246,7 @@ if version >= 508 || !exists("did_haxe_syn_inits")
   HaxeHiLink htmlCommentPart	Special
   HaxeHiLink haxeSpaceError		Error
 
-  HaxeHiLink haxeCondIf Macro
-  HaxeHiLink haxeCondElse Macro
-  HaxeHiLink haxeCondEnd Macro
-  HaxeHiLink haxeCondError Error
+  HaxeHiLink haxeCond Macro
 endif
 
 delcommand HaxeHiLink
