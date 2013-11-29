@@ -153,7 +153,7 @@ syn match   haxeNumber		 "\<\d\+\([eE][-+]\=\d\+\)\=[fFdD]\>"
 
 
 syn match haxeCondIf "#if\>"
-syn match haxeCondElse "#else\>"
+syn match haxeCondElse "#\%(else\|elseif\)\>"
 syn match haxeCondEnd "#end\>"
 
 " unicode characters
