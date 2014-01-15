@@ -82,7 +82,7 @@ if exists("haxe_space_errors")
   endif
 endif
 
-syn region  haxeLabelRegion     transparent matchgroup=haxeLabel start="\<case\>" matchgroup=NONE end=":" contains=haxeNumber
+" syn region  haxeLabelRegion     transparent matchgroup=haxeLabel start="\<case\>" matchgroup=NONE end=":" contains=haxeNumber
 syn match   haxeUserLabel       "^\s*[_$a-zA-Z][_$a-zA-Z0-9_]*\s*:"he=e-1 contains=haxeLabel
 syn keyword haxeLabel		default
 
